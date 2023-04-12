@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+    <h3>Payment</h3>
+    <div class="container">
+        <div class="box">
+            <div class="box-input">
+                <div class="front">
+                 <form>
+                    <input type="text" id="acc" class="aq" placeholder="Card Number" maxlength="16" required><span id="s1"></span><br>
+                    <input type="text" id="name" placeholder="Holder Name" required><span id="s2"></span>         <br>
+                    <input type="text" id="valid" placeholder="Valid Till" required><span id="s3"></span> 
+                    <input type="text" id="cvv" placeholder="C V V" required> <span id="s4"></span> 
+                 </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!----------------Card-------------------->
+
+   <div id="card">
+    <div class="container">
+        <div class="card-box">
+            <div class="card-inner">
+                <div class="face">
+                    <img src="card/map.png" class="map">
+                    <div class="row">
+                        <img src="card/chip.png" width="40px">
+                        <img src="card/visa.png" width="50px">
+                    </div>
+                    <div class="c-no">
+                        <div class="row">
+                            <p>####</p>
+                            <p>####</p>
+                            <p>####</p>
+                            <p>####</p>
+                        </div>
+                       
+                    </div>
+                   <div class="row c-holder">
+                    <p>Card Holder</p>
+                    <span>Valid Till</span>
+                   </div>
+
+                   <div class="row details">
+                    <p></p>
+                    <p></p>
+                   </div>
+                
+                <div class="back">
+                    <img src="card/map.png" class="map">
+                    <div class="bar"> </div>
+                    <div class="pattern">
+                        <img src="card/pattern.png" width="85%">
+                        <div class="cvv"></div>
+                    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    
+   </div>
+
+
+
+
+
+   <script>
+    document.querySelector('.aq').oninput = () =>{
+        document.querySelector('.c-no').innerText = document.querySelector('.aq').value;
+    }
+
+    document.querySelector('.name').oninput = () =>{
+        document.querySelector('.c-holder p').innerText = document.querySelector('.name').value;
+
+   </script>
+    
+</body>
+</html>

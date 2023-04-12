@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: #8dc6ff;
+    height: 80vh;
+}
+.container {
+    
+}
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    padding: 43px 0;
+}
+.box {
+    width: 500px;
+    height: 400px;
+    background-color: #506f86;
+    box-shadow: 7px 3px 4px 4px;
+    margin: 8% 58%;
+    border-radius: 16px;
+}
+form {
+    text-align: center;
+    padding: 26% 0;    
+}
+
+form input {
+    text-align: center;
+    height: 40px;
+    width: 45%;
+    font-size: 17px;
+    line-height: 17px;
+    margin-bottom: 40px;
+}
+
+
+
+
+/*---------------------------------Card-----------------------*/
+#card {
+    margin: -30% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+.card-box {
+     height: 240px;
+     width: 369px;
+    
+     border-radius: 12px;
+}
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+}
+
+.face, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(60deg,#00bbf0,#222831);
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    z-index: 1;
+    backface-visibility: hidden;
+
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 11px 12px;
+}
+
+.back .map {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+.bar {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    margin: 16px 0;
+}
+
+.pattern {
+    margin-top: 20px;
+}
+.pattern .cvv {
+    color: black;
+    background: white;
+}
+.back {
+    transform: rotateY(180deg);
+}
+.card-box:hover .card-inner {
+    transform: rotateY(-180deg);
+}
+
+.c-no p {
+    font-size: 22px;
+    color: white;
+    margin: 30px 0;
+}
+.c-holder {
+    font-size: 14px;
+}
+.details {
+    font-size: 18px;
+}
